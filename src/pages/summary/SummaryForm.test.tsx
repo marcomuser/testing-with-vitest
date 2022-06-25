@@ -13,9 +13,11 @@ test("submit button is disabled by default", () => {
 test("submit button is enabled after checkbox is clicked", async () => {
   const user = userEvent.setup();
   render(<SummaryForm />);
+
   const checkbox = screen.getByRole("checkbox", {
     name: /i agree to the terms and conditions/i,
   });
+
   const button = screen.getByRole("button", {
     name: /confirm order/i,
   });
