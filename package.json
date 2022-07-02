@@ -14,7 +14,7 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,ts,tsx,json.md}": "npm run format"
+    "*.{js,ts,tsx,json}": "npm run format"
   },
   "dependencies": {
     "react": "^18.2.0",
