@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "format": "prettier --write .",
+    "format": "prettier --write",
     "lint": "eslint --max-warnings 0 \"**/*.{js,ts,tsx}\"",
     "tsc": "tsc --noEmit",
     "pre-commit": "lint-staged"
