@@ -15,10 +15,8 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,ts,tsx,json,md}": [
-      "npm run format",
-      "npm run lint"
-    ]
+    "*.{js,ts,tsx,json,md,html,css}": "npm run format",
+    "*.{js,ts,tsx}": "npm run lint"
   },
   "dependencies": {
     "react": "^18.2.0",
