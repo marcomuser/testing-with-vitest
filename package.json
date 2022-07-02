@@ -9,20 +9,14 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "format": "prettier --write .",
-    "lint": "eslint",
-    "tsc": "tsc --noEmit"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm run test"
-    }
+    "lint": "eslint --max-warnings 0",
+    "tsc": "tsc --noEmit",
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*": [
+    "src/**/*.{ts,tsx}": [
       "npm run format",
-      "npm run lint",
-      "npm run tsc"
+      "npm run lint"
     ]
   },
   "dependencies": {
